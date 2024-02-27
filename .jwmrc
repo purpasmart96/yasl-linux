@@ -45,7 +45,7 @@
     </Group>
 
     <!-- Tray at the bottom. -->
-    <Tray x="0" y="-1" height="0" autohide="off" delay="1000">
+    <Tray x="0" y="-1" height="12" autohide="off" delay="1000">
 
         <!--TrayButton label="JWM">root:1</TrayButton-->
         <TrayButton icon="/usr/share/jwm/jwm-blue.svg">root:1</TrayButton>
