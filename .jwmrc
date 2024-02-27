@@ -3,14 +3,14 @@
 
     <!-- The root menu. -->
     <RootMenu onroot="12">
-        <Program icon="utilities-terminal" label="Terminal">xterm</Program>
+        <Program icon="utilities-terminal" label="Terminal">urxvt</Program>
         <Menu icon="folder" label="Applications">
             <Program icon="sound" label="Audacious">audacious</Program>
             <Program icon="calc" label="Calculator">xcalc</Program>
             <Program icon="web-browser" label="Firefox">firefox</Program>
             <Program icon="image" label="Gimp">gimp</Program>
             <Program icon="email" label="Mail">claws-mail</Program>
-            <Program icon="system-file-manager" label="ROX">rox ~</Program>
+            <Program icon="system-file-manager" label="SpaceFM">spacefm</Program>
         </Menu>
         <Menu icon="folder" label="Utilities">
             <Program icon="font" label="Fonts">xfontsel</Program>
@@ -122,22 +122,22 @@
          for icons in multiple paths.
       -->
     <IconPath>
-      /usr/local/share/icons/Tango/scalable/actions
+      /usr/share/icons/Tango/scalable/actions
     </IconPath>
     <IconPath>
-      /usr/local/share/icons/Tango/scalable/apps
+      /usr/share/icons/Tango/scalable/apps
     </IconPath>
     <IconPath>
-      /usr/local/share/icons/Tango/scalable/places
+      /usr/share/icons/Tango/scalable/places
     </IconPath>
     <IconPath>
-      /usr/local/share/icons/Tango/scalable/status
+      /usr/share/icons/Tango/scalable/status
     </IconPath>
     <IconPath>
-      /usr/local/share/icons/Tango/scalable/mimetypes
+      /usr/share/icons/Tango/scalable/mimetypes
     </IconPath>
     <IconPath>
-      /usr/local/share/jwm
+      /usr/share/jwm
     </IconPath>
 
     <!-- Virtual Desktops -->
@@ -166,7 +166,7 @@
     <MoveMode>opaque</MoveMode>
 
     <!-- The resize mode (outline or opaque) -->
-    <ResizeMode>opaque</ResizeMode>
+    <ResizeMode>outline</ResizeMode>
 
     <!-- Key bindings -->
     <Key key="Up">up</Key>
