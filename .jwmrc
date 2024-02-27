@@ -45,10 +45,10 @@
     </Group>
 
     <!-- Tray at the bottom. -->
-    <Tray x="0" y="-1" autohide="off" delay="1000">
+    <Tray x="0" y="-1" height="0" autohide="off" delay="1000">
 
         <!--TrayButton label="JWM">root:1</TrayButton-->
-        <TrayButton icon="/usr/share/jwm/jwm-blue">root:1</TrayButton>
+        <TrayButton icon="/usr/share/jwm/jwm-blue.svg">root:1</TrayButton>
         <Spacer width="2"/>
         <TrayButton label="_">showdesktop</TrayButton>
         <Spacer width="2"/>
@@ -60,7 +60,9 @@
         <!--Swallow width="32" height="32" name="xclock">xclock</Swallow-->
 
         <Dock/>
+        <Spacer width="2"/>
         <Clock format="%l:%M %p"><Button mask="123">exec:xclock</Button></Clock>
+        <Spacer width="2"/>
 
     </Tray>
 
@@ -143,7 +145,7 @@
 
     <!-- Virtual Desktops -->
     <!-- Desktop tags can be contained within Desktops for desktop names. -->
-    <Desktops width="4" height="1">
+    <Desktops width="3" height="1">
         <!-- Default background. Note that a Background tag can be
               contained within a Desktop tag to give a specific background
               for that desktop.
