@@ -2,3 +2,6 @@ URxvt*transparent: true
 URxvt*foreground: White
 URxvt*background: Black
 URxvt*scrollBar: false
+#URxvt.font: 9x15
+#URxvt.font: xft:NotoMono:size=10:antialias=true
+#URxvt.font: xft:NotoMono-Regular:size=10:antialias=true

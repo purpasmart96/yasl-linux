@@ -5,7 +5,7 @@
     <RootMenu height="32" onroot="12">
         <Program icon="utilities-terminal" label="Terminal">urxvt</Program>
         <Menu icon="folder" label="Applications">
-            <Program icon="system-file-manager" label="PCManFM<">pcmanfm</Program-->
+            <Program icon="system-file-manager" label="PCManFM">pcmanfm</Program>
             <Program icon="sound" label="Audacious">audacious</Program>
             <Program icon="calc" label="Calculator">xcalc</Program>
             <Program icon="web-browser" label="Firefox">firefox</Program>
@@ -50,18 +50,18 @@
 
         <!--TrayButton label="JWM">root:1</TrayButton-->
         <TrayButton icon="/usr/share/jwm/jwm-blue.svg">root:1</TrayButton>
-        <Spacer width="8"/>
-        <TrayButton label="Terminal" icon="/usr/share/icons/Papirus/32x32/apps/terminal.svg">exec:x-terminal-emulator</TrayButton>
+        <Spacer width="6"/>
+        <TrayButton popup="Terminal" icon="/usr/share/icons/Papirus/16x16/apps/terminal.svg">exec:urxvt</TrayButton>
         <Spacer width="2"/>
-        <TrayButton label="File Manager" icon="/usr/share/icons/Papirus/32x32/apps/xfce-filemanager.svg">exec:x-file-manager</TrayButton>
+        <TrayButton popup="File Manager" icon="/usr/share/icons/Papirus/16x16/apps/xfce-filemanager.svg">exec:pcmanfm</TrayButton>
         <Spacer width="2"/>
-        <TrayButton label="Web Browser" icon="/usr/share/icons/Papirus/32x32/apps/firefox.sv">exec:x-www-browser</TrayButton>
+        <TrayButton popup="Web Browser" icon="/usr/share/icons/Papirus/16x16/apps/firefox.svg">exec:firefox</TrayButton>
         <Spacer width="2"/>
 
         <TaskList maxwidth="256"/>
 
         <Spacer width="2"/>
-        <TrayButton label="Show Desktop">showdesktop</TrayButton>
+        <TrayButton popup="Show Desktop" icon="/usr/share/icons/Papirus/16x16/places/desktop.svg">showdesktop</TrayButton>
         <Spacer width="2"/>
         <Pager labeled="true"/>
         <!--Swallow width="32" height="32" name="xclock">xclock</Swallow-->
@@ -75,8 +75,8 @@
 
     <!-- Visual Styles -->
     <WindowStyle decorations="flat">
-        <Font align="center">Sans-10:bold</Font>
-        <Height>28</Height>
+        <Font align="center">Sans-10</Font>
+        <Height>26</Height>
         <Width>4</Width>
         <Corner>1</Corner>
         <Foreground>#FFFFFF</Foreground>
@@ -88,9 +88,9 @@
             <Opacity>1.0</Opacity>
         </Active>
     </WindowStyle>
-    <TrayStyle decorations="motif">
+    <TrayStyle decorations="flat">
         <Font>Sans-12</Font>
-        <Background>#333333</Background>
+        <Background>#232323</Background>
         <Foreground>#FFFFFF</Foreground>
         <Opacity>0.75</Opacity>
     </TrayStyle>
@@ -134,27 +134,40 @@
          for icons in multiple paths.
       -->
     <IconPath>
-      /usr/share/icons/Tango/scalable/actions
+      /usr/share/icons/Papirus/16x16/actions/
     </IconPath>
     <IconPath>
-      /usr/share/icons/Tango/scalable/apps
+      /usr/share/icons/Papirus/16x16/apps/
     </IconPath>
     <IconPath>
-      /usr/share/icons/Tango/scalable/places
+      /usr/share/icons/Papirus/16x16/places/
     </IconPath>
     <IconPath>
-      /usr/share/icons/Tango/scalable/status
+      /usr/share/icons/Papirus/16x16/mimetypes/
+    </IconPath>
+
+    <!--IconPath>
+      /usr/share/icons/Tango/scalable/actions/
     </IconPath>
     <IconPath>
-      /usr/share/icons/Tango/scalable/mimetypes
+      /usr/share/icons/Tango/scalable/apps/
     </IconPath>
     <IconPath>
-      /usr/share/jwm
+      /usr/share/icons/Tango/scalable/places/
     </IconPath>
+    <IconPath>
+      /usr/share/icons/Tango/scalable/status/
+    </IconPath>
+    <IconPath>
+      /usr/share/icons/Tango/scalable/mimetypes/
+    </IconPath>
+    <IconPath>
+      /usr/share/jwm/
+    </IconPath-->
 
     <!-- Virtual Desktops -->
     <!-- Desktop tags can be contained within Desktops for desktop names. -->
-    <Desktops width="3" height="1">
+    <Desktops width="2" height="1">
         <!-- Default background. Note that a Background tag can be
               contained within a Desktop tag to give a specific background
               for that desktop.
@@ -169,7 +182,7 @@
     <DoubleClickDelta>2</DoubleClickDelta>
 
     <!-- The focus model (sloppy or click) -->
-    <FocusModel>sloppy</FocusModel>
+    <FocusModel>click</FocusModel>
 
     <!-- The snap mode (none, screen, or border) -->
     <SnapMode distance="10">border</SnapMode>
